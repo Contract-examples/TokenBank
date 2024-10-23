@@ -9,7 +9,7 @@ contract TokenBank {
     using SafeERC20 for IERC20;
 
     // token
-    IERC20 public token;
+    IERC20 public immutable token;
 
     // user => balance
     mapping(address => uint256) public balances;
